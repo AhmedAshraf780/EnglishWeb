@@ -1,19 +1,10 @@
 // Load saved data from localStorage
 const savedData = JSON.parse(localStorage.getItem("englishLearningData")) || {
     "sentences": [
-        "She always takes the bus to work.",
-        "He enjoys reading books in the evening.",
-        "They are planning a trip to Paris."
     ],
     "phrasal-verbs": [
-        "Break down - to stop working (e.g., a car)",
-        "Give up - to stop trying",
-        "Look after - to take care of someone"
     ],
     "idioms": [
-        "A blessing in disguise - a good thing that seemed bad at first",
-        "Beat around the bush - avoid saying something directly",
-        "Bite the bullet - to endure a painful experience"
     ]
 };
 
