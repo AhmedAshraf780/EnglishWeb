@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>English Learning App</h1>
+        <nav>
+            <button onclick="showCategory('sentences')">Sentences</button>
+            <button onclick="showCategory('phrasal-verbs')">Phrasal Verbs</button>
+            <button onclick="showCategory('idioms')">Idioms</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <h2>Select a category to start</h2>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="new-item" placeholder="Add a new phrase...">
+            <button class="add-btn" onclick="addNewItem()">Add</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

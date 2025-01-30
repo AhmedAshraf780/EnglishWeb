@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+nav button {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+#content {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%; /* Adjusted for mobile */
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Colorful categories */
+.sentences li {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.phrasal-verbs li {
+    color: #33c3ff;
+    font-style: italic;
+}
+
+.idioms li {
+    color: #28a745;
+    text-decoration: underline;
+}
+
+/* Input container */
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.add-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button.add-btn:hover {
+    background: #218838;
+}
+
+/* 🔥 Mobile Responsive */
+@media (max-width: 600px) {
+    nav button {
+        font-size: 14px;
+        padding: 8px;
+        flex: 1; /* Make buttons take equal space */
+        max-width: 120px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button.add-btn {
+        width: auto;
+        padding: 10px;
+    }
+}
+
